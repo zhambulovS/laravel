@@ -6,6 +6,8 @@ use App\Models\Employee;
 use Illuminate\Http\Request;
 use function Symfony\Component\Console\Debug\getClientIp;
 use Barryvdh\DomPDF\Facade\Pdf;
+use Cyberduck\LaravelExcel\ExcelServiceProvider\Exporter;
+
 class EmployeeController extends Controller
 {
     public function index(Request $request){
